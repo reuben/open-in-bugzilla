@@ -63,7 +63,7 @@
 import re
 import webbrowser
 
-match = re.findall(r'\b([0-9]{3,8})\b', sys.argv[1])
+match = re.findall(r'([0-9]{3,8})', sys.argv[1])
 match = filter(lambda e: int(e) &lt; 1980 or int(e) &gt; 2020, match) # filter out years in the 1980-2020 range
 match = set(match) # remove duplicates
 
@@ -181,12 +181,10 @@ else:
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>408.000000:383.000000</string>
+				<string>286.000000:474.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
